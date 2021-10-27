@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		55AEAA3927289BE5000E1010 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AEAA3827289BE5000E1010 /* AppDelegate.swift */; };
 		55AEAA3B27289BE5000E1010 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AEAA3A27289BE5000E1010 /* SceneDelegate.swift */; };
-		55AEAA3D27289BE5000E1010 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AEAA3C27289BE5000E1010 /* ViewController.swift */; };
-		55AEAA4027289BE5000E1010 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55AEAA3E27289BE5000E1010 /* Main.storyboard */; };
+		55AEAA3D27289BE5000E1010 /* DogSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AEAA3C27289BE5000E1010 /* DogSearchViewController.swift */; };
 		55AEAA4227289BE8000E1010 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55AEAA4127289BE8000E1010 /* Assets.xcassets */; };
 		55AEAA4527289BE8000E1010 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55AEAA4327289BE8000E1010 /* LaunchScreen.storyboard */; };
+		55AEAA4D27289C27000E1010 /* DogSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55AEAA4C27289C27000E1010 /* DogSearchViewController.xib */; };
+		55AEAA4F27289C82000E1010 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AEAA4E27289C82000E1010 /* APIClient.swift */; };
+		55AEAA5127289C8B000E1010 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AEAA5027289C8B000E1010 /* Dog.swift */; };
+		55AEAA532728A09B000E1010 /* DogSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AEAA522728A09B000E1010 /* DogSearchViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		55AEAA3527289BE4000E1010 /* DogBreedFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogBreedFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55AEAA3827289BE5000E1010 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55AEAA3A27289BE5000E1010 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		55AEAA3C27289BE5000E1010 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		55AEAA3F27289BE5000E1010 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		55AEAA3C27289BE5000E1010 /* DogSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogSearchViewController.swift; sourceTree = "<group>"; };
 		55AEAA4127289BE8000E1010 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55AEAA4427289BE8000E1010 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55AEAA4627289BE8000E1010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55AEAA4C27289C27000E1010 /* DogSearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DogSearchViewController.xib; sourceTree = "<group>"; };
+		55AEAA4E27289C82000E1010 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		55AEAA5027289C8B000E1010 /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		55AEAA522728A09B000E1010 /* DogSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogSearchViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +64,14 @@
 			children = (
 				55AEAA3827289BE5000E1010 /* AppDelegate.swift */,
 				55AEAA3A27289BE5000E1010 /* SceneDelegate.swift */,
-				55AEAA3C27289BE5000E1010 /* ViewController.swift */,
-				55AEAA3E27289BE5000E1010 /* Main.storyboard */,
+				55AEAA3C27289BE5000E1010 /* DogSearchViewController.swift */,
+				55AEAA522728A09B000E1010 /* DogSearchViewModel.swift */,
+				55AEAA4C27289C27000E1010 /* DogSearchViewController.xib */,
 				55AEAA4127289BE8000E1010 /* Assets.xcassets */,
 				55AEAA4327289BE8000E1010 /* LaunchScreen.storyboard */,
 				55AEAA4627289BE8000E1010 /* Info.plist */,
+				55AEAA4E27289C82000E1010 /* APIClient.swift */,
+				55AEAA5027289C8B000E1010 /* Dog.swift */,
 			);
 			path = DogBreedFinder;
 			sourceTree = "<group>";
@@ -126,7 +135,7 @@
 			files = (
 				55AEAA4527289BE8000E1010 /* LaunchScreen.storyboard in Resources */,
 				55AEAA4227289BE8000E1010 /* Assets.xcassets in Resources */,
-				55AEAA4027289BE5000E1010 /* Main.storyboard in Resources */,
+				55AEAA4D27289C27000E1010 /* DogSearchViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +146,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55AEAA3D27289BE5000E1010 /* ViewController.swift in Sources */,
+				55AEAA3D27289BE5000E1010 /* DogSearchViewController.swift in Sources */,
+				55AEAA532728A09B000E1010 /* DogSearchViewModel.swift in Sources */,
 				55AEAA3927289BE5000E1010 /* AppDelegate.swift in Sources */,
 				55AEAA3B27289BE5000E1010 /* SceneDelegate.swift in Sources */,
+				55AEAA5127289C8B000E1010 /* Dog.swift in Sources */,
+				55AEAA4F27289C82000E1010 /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		55AEAA3E27289BE5000E1010 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				55AEAA3F27289BE5000E1010 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		55AEAA4327289BE8000E1010 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
