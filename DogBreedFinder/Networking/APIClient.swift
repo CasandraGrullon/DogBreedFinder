@@ -8,10 +8,10 @@
 import Foundation
 
 class APIClient {
-    static func fetchDogBreeds(searchQuery: String? = nil, completion: @escaping (Result<[Dog], Error>) -> ()) {
+    static func fetchDogBreeds(searchQuery: String, completion: @escaping (Result<[Dog], Error>) -> ()) {
         var endpoint = ""
         
-        if let searchQuery = searchQuery {
+        if !searchQuery.isEmpty {
             endpoint = "https://api.TheDogAPI.com/v1/breeds/search?q=\(searchQuery)"
         } else {
             endpoint = "https://api.TheDogAPI.com/v1/breeds/"

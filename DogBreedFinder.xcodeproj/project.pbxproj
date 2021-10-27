@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041A006B2729A6C40076820C /* DogCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041A006A2729A6C40076820C /* DogCollectionViewCell.swift */; };
+		041A006D2729AA6A0076820C /* DogCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041A006C2729AA6A0076820C /* DogCollectionViewCell.xib */; };
 		55AEAA3927289BE5000E1010 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AEAA3827289BE5000E1010 /* AppDelegate.swift */; };
 		55AEAA3B27289BE5000E1010 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AEAA3A27289BE5000E1010 /* SceneDelegate.swift */; };
 		55AEAA3D27289BE5000E1010 /* DogSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AEAA3C27289BE5000E1010 /* DogSearchViewController.swift */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		041A006A2729A6C40076820C /* DogCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogCollectionViewCell.swift; sourceTree = "<group>"; };
+		041A006C2729AA6A0076820C /* DogCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DogCollectionViewCell.xib; sourceTree = "<group>"; };
 		55AEAA3527289BE4000E1010 /* DogBreedFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogBreedFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55AEAA3827289BE5000E1010 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55AEAA3A27289BE5000E1010 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +47,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		041A0063272993690076820C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				55AEAA5027289C8B000E1010 /* Dog.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		041A00642729937C0076820C /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				55AEAA4E27289C82000E1010 /* APIClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		041A0065272993930076820C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				55AEAA3C27289BE5000E1010 /* DogSearchViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		041A0066272993A30076820C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				55AEAA522728A09B000E1010 /* DogSearchViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		041A0067272993B00076820C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				55AEAA4C27289C27000E1010 /* DogSearchViewController.xib */,
+				041A006C2729AA6A0076820C /* DogCollectionViewCell.xib */,
+				041A006A2729A6C40076820C /* DogCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		55AEAA2C27289BE4000E1010 = {
 			isa = PBXGroup;
 			children = (
@@ -62,16 +108,16 @@
 		55AEAA3727289BE4000E1010 /* DogBreedFinder */ = {
 			isa = PBXGroup;
 			children = (
+				041A0063272993690076820C /* Model */,
+				041A00642729937C0076820C /* Networking */,
+				041A0067272993B00076820C /* Views */,
+				041A0066272993A30076820C /* ViewModels */,
+				041A0065272993930076820C /* ViewControllers */,
 				55AEAA3827289BE5000E1010 /* AppDelegate.swift */,
 				55AEAA3A27289BE5000E1010 /* SceneDelegate.swift */,
-				55AEAA3C27289BE5000E1010 /* DogSearchViewController.swift */,
-				55AEAA522728A09B000E1010 /* DogSearchViewModel.swift */,
-				55AEAA4C27289C27000E1010 /* DogSearchViewController.xib */,
 				55AEAA4127289BE8000E1010 /* Assets.xcassets */,
 				55AEAA4327289BE8000E1010 /* LaunchScreen.storyboard */,
 				55AEAA4627289BE8000E1010 /* Info.plist */,
-				55AEAA4E27289C82000E1010 /* APIClient.swift */,
-				55AEAA5027289C8B000E1010 /* Dog.swift */,
 			);
 			path = DogBreedFinder;
 			sourceTree = "<group>";
@@ -136,6 +182,7 @@
 				55AEAA4527289BE8000E1010 /* LaunchScreen.storyboard in Resources */,
 				55AEAA4227289BE8000E1010 /* Assets.xcassets in Resources */,
 				55AEAA4D27289C27000E1010 /* DogSearchViewController.xib in Resources */,
+				041A006D2729AA6A0076820C /* DogCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55AEAA3D27289BE5000E1010 /* DogSearchViewController.swift in Sources */,
+				041A006B2729A6C40076820C /* DogCollectionViewCell.swift in Sources */,
 				55AEAA532728A09B000E1010 /* DogSearchViewModel.swift in Sources */,
 				55AEAA3927289BE5000E1010 /* AppDelegate.swift in Sources */,
 				55AEAA3B27289BE5000E1010 /* SceneDelegate.swift in Sources */,

@@ -17,7 +17,7 @@ struct Dog: Codable {
     let life_span: String?
     let temperament: String?
     let origin: String?
-    let image: Image
+    let image: Image?
 }
 
 struct Weight: Codable {
