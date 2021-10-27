@@ -17,24 +17,26 @@
                 <rect key="frame" x="0.0" y="0.0" width="745" height="291"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kDs-KI-phi">
-                        <rect key="frame" x="0.0" y="0.0" width="745" height="145.5"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kDs-KI-phi">
+                        <rect key="frame" x="285" y="10" width="175" height="174.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="kDs-KI-phi" secondAttribute="height" multiplier="1:1" id="PRp-p9-zIb"/>
+                        </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OsK-9c-9jm">
-                        <rect key="frame" x="10" y="155.5" width="725" height="20.5"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OsK-9c-9jm">
+                        <rect key="frame" x="10" y="194.5" width="725" height="13.5"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="kDs-KI-phi" firstAttribute="height" secondItem="31K-Dc-1lo" secondAttribute="height" multiplier="0.5" id="3MK-Gh-u4q"/>
-                    <constraint firstItem="OsK-9c-9jm" firstAttribute="top" secondItem="kDs-KI-phi" secondAttribute="bottom" constant="10" id="GV0-J4-Zi3"/>
-                    <constraint firstItem="OsK-9c-9jm" firstAttribute="leading" secondItem="31K-Dc-1lo" secondAttribute="leading" constant="10" id="Ow3-ui-sJy"/>
-                    <constraint firstAttribute="trailing" secondItem="OsK-9c-9jm" secondAttribute="trailing" constant="10" id="TU3-fE-Qa4"/>
-                    <constraint firstItem="kDs-KI-phi" firstAttribute="top" secondItem="31K-Dc-1lo" secondAttribute="top" id="XI9-jL-Yvy"/>
-                    <constraint firstAttribute="trailing" secondItem="kDs-KI-phi" secondAttribute="trailing" id="cxf-9v-xb3"/>
-                    <constraint firstItem="kDs-KI-phi" firstAttribute="leading" secondItem="31K-Dc-1lo" secondAttribute="leading" id="uo9-fH-pvp"/>
+                    <constraint firstItem="OsK-9c-9jm" firstAttribute="top" secondItem="kDs-KI-phi" secondAttribute="bottom" constant="10" id="2DN-3n-tKl"/>
+                    <constraint firstItem="kDs-KI-phi" firstAttribute="top" secondItem="31K-Dc-1lo" secondAttribute="top" constant="10" id="7qr-AL-o8f"/>
+                    <constraint firstAttribute="trailing" secondItem="OsK-9c-9jm" secondAttribute="trailing" constant="10" id="acB-dG-Kgb"/>
+                    <constraint firstItem="OsK-9c-9jm" firstAttribute="leading" secondItem="31K-Dc-1lo" secondAttribute="leading" constant="10" id="fUg-mx-Syx"/>
+                    <constraint firstItem="kDs-KI-phi" firstAttribute="centerX" secondItem="31K-Dc-1lo" secondAttribute="centerX" id="hy6-f0-CUM"/>
+                    <constraint firstItem="kDs-KI-phi" firstAttribute="height" secondItem="31K-Dc-1lo" secondAttribute="height" multiplier="0.6" id="tuD-yn-o8m"/>
                 </constraints>
             </collectionViewCellContentView>
             <size key="customSize" width="745" height="291"/>

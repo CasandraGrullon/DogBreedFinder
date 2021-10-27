@@ -16,6 +16,7 @@ class DogSearchViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
     var viewModel = DogSearchViewModel()
+    weak var coordinator: MainCoordinator?
     
     init(viewModel: DogSearchViewModel) {
         self.viewModel = viewModel
@@ -32,10 +33,12 @@ class DogSearchViewController: UIViewController {
         configureCollectionView()
         configureSearchBar()
         viewModel.setSearchText(text: "")
+        navigationItem.title = "Dog Index"
     }
     
     private func configureCollectionView() {
         collectionView.dataSource = self
+        collectionView.delegate = self
         collectionView.register(UINib(nibName: "DogCollectionViewCell", bundle: nil),
                                 forCellWithReuseIdentifier: DogCollectionViewCell.identifier)
     }
@@ -54,17 +57,23 @@ extension DogSearchViewController: ViewControllerDelegate {
     }
 }
 
-//MARK: CollectionView Datasource
-extension DogSearchViewController: UICollectionViewDataSource {
+//MARK: CollectionView Datasource + Delegate
+extension DogSearchViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return viewModel.dogs.count
     }
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DogCollectionViewCell.identifier, for: indexPath) as? DogCollectionViewCell else { fatalError("could not dequeue DogCollectionViewCell") }
         
         let dog = viewModel.dogs[indexPath.row]
         cell.configureCell(dog: dog)
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let dog = viewModel.dogs[indexPath.row]
+        coordinator?.tappedOnCell(for: dog)
     }
 }
 
