@@ -32,6 +32,7 @@ class DogDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI(dog: dog)
+        print(dog)
     }
     
     func updateUI(dog: Dog) {

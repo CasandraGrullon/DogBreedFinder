@@ -40,4 +40,5 @@ class DogSearchViewModel: ViewModelDelegate {
             fetchDogs("")
         }
     }
+    
 }

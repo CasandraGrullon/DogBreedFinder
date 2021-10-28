@@ -53,6 +53,7 @@ extension DogSearchViewController: ViewControllerDelegate {
     func dogData(dogs: [Dog]) {
         DispatchQueue.main.async {
             self.collectionView.reloadData()
+            print(dogs)
         }
     }
 }
@@ -64,7 +65,9 @@ extension DogSearchViewController: UICollectionViewDataSource, UICollectionViewD
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DogCollectionViewCell.identifier, for: indexPath) as? DogCollectionViewCell else { fatalError("could not dequeue DogCollectionViewCell") }
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DogCollectionViewCell.identifier, for: indexPath) as? DogCollectionViewCell else {
+            fatalError("could not dequeue DogCollectionViewCell")
+        }
         
         let dog = viewModel.dogs[indexPath.row]
         cell.configureCell(dog: dog)
